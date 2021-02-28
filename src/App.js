@@ -1,14 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
+import { Router, Route, Switch } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import "./App.scss";
 
+const history = createBrowserHistory();
+
 const App = () => {
   return (
-    <Router>
+    <Router history={history}>
       <div className="App">
         <Header />
         <Switch>
