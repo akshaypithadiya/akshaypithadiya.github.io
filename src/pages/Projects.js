@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../components/project/Project";
+import Footer from "../components/footer/Footer";
 
 const Projects = () => {
   const projects = [
@@ -33,9 +34,10 @@ const Projects = () => {
   ];
   return (
     <div className="Projects">
-      <center>
+      <div className="projects-header">
         <h2>Projects</h2>
-      </center>
+        <p>These are some of the projects i have worked on</p>
+      </div>
       {projects.map((project) => {
         const { id, name, year, desc, website_url, github_url } = project;
         return (
@@ -49,6 +51,7 @@ const Projects = () => {
           />
         );
       })}
+      <Footer />
     </div>
   );
 };

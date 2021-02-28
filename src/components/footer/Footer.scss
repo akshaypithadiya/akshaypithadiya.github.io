@@ -1,0 +1,18 @@
+.Footer {
+  text-align: center;
+  margin-bottom: 40px;
+
+  ion-icon {
+    border: 1px solid #30363d;
+    margin-right: 16px;
+    font-size: 28px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  ion-icon:hover {
+    border: 1px solid #c9d1d2;
+    background: #c9d1d2;
+    color: #0d1117;
+  }
+}
