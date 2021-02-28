@@ -1,0 +1,40 @@
+.Project {
+  margin: 0px auto;
+  max-width: 500px;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 0px 16px;
+  margin-bottom: 22px;
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+
+    .project-name {
+      font-size: 18px;
+    }
+
+    .project-year {
+      color: #8b949e;
+    }
+  }
+
+  .project-body {
+    font-size: 14px;
+  }
+
+  .project-footer {
+    font-size: 14px;
+
+    a {
+      color: #6fdbfc;
+      margin-right: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Project {
+    max-width: 300px;
+  }
+}
