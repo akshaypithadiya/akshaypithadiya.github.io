@@ -12,7 +12,11 @@ const Music = () => {
     <div className="Music">
       <ion-icon style={musicIconStyle} name="musical-notes"></ion-icon>
       <span style={{ padding: "5px" }}>
-        <a href="https://www.youtube.com/watch?v=gAjR4_CbPpQ" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=gAjR4_CbPpQ"
+          style={{ borderBottom: "1px solid #c9d1d2" }}
+          target="_blank"
+        >
           Daft Punk - Harder Better Faster
         </a>
       </span>

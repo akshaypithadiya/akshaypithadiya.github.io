@@ -5,8 +5,9 @@ const Home = () => {
   return (
     <div className="Home">
       <center>
-        <h2>Home</h2>
-        <h3>Work in progress...</h3>
+        <h2>About me</h2>
+        <img src="/akshay.jpg" className="avatar" />
+        <h3>Hi! I'm Akshay Pithadiya</h3>
         <Music />
       </center>
     </div>

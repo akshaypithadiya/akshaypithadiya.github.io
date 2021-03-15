@@ -21,9 +21,20 @@ a {
   max-width: 610px;
 }
 
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 480px) {
   .projects-header {
     margin: 0px auto;
     max-width: 320px;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
   }
 }
