@@ -1,28 +1,27 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
+import NotFound from "./components/error/NotFound";
 import "./App.scss";
-
-const history = createBrowserHistory();
 
 const App = () => {
   return (
-    <Router history={history}>
+    <HashRouter basename="/">
       <div className="App">
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/projects" component={Projects} />
+          <Route component={NotFound} status={404} />
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 

@@ -34,6 +34,9 @@ const Footer = () => {
           </a>
         );
       })}
+      <p style={{ color: "rgb(129 148 158 / 45%)", fontSize: "15px" }}>
+        &copy; {new Date().getFullYear()} Akshay Pithadiya
+      </p>
     </div>
   );
 };
