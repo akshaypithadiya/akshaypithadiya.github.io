@@ -1,13 +1,14 @@
 import React from "react";
 import Music from "../components/music/Music";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
   return (
     <div className="Home">
       <center>
         <h2>About me</h2>
-        <img src="/akshay.jpg" className="avatar" />
-        <h3>Hi! I'm Akshay Pithadiya</h3>
+        <LazyLoadImage alt="akshay" src="/akshay.jpg" className="avatar" />
+        <p className="about-me">Hi! I’m Akshay Pithadiya</p>
         <Music />
       </center>
     </div>

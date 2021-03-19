@@ -1,6 +1,5 @@
 import React from "react";
 import Project from "../components/project/Project";
-import Footer from "../components/footer/Footer";
 
 const Projects = () => {
   const projects = [
@@ -35,7 +34,9 @@ const Projects = () => {
   return (
     <div className="Projects">
       <div className="projects-header">
-        <h2>Projects</h2>
+        <center>
+          <h2>Projects</h2>
+        </center>
         <p>These are some of the projects i have worked on</p>
       </div>
       {projects.map((project) => {
