@@ -6,6 +6,7 @@ const Projects = () => {
     {
       id: 1,
       name: "confviz",
+      type: "open source",
       year: "2021",
       desc:
         "Statistics, Visualizations and Paper Links of Machine Learning Conferences",
@@ -15,6 +16,7 @@ const Projects = () => {
     {
       id: 2,
       name: "TorchExpo",
+      type: "open source",
       year: "2020",
       desc:
         "Collection of models and extensions for mobile deployment in PyTorch",
@@ -24,6 +26,7 @@ const Projects = () => {
     {
       id: 3,
       name: "connex",
+      type: "personal",
       year: "2018",
       desc:
         "Portal for college where students can write posts, take notes, upload photos, add comments and connect with other students",
@@ -37,14 +40,15 @@ const Projects = () => {
         <center>
           <h2>Projects</h2>
         </center>
-        <p>These are some of the projects i have worked on</p>
+        <p>These are some of the projects i have worked on -</p>
       </div>
       {projects.map((project) => {
-        const { id, name, year, desc, website_url, github_url } = project;
+        const { id, name, type, year, desc, website_url, github_url } = project;
         return (
           <Project
             key={id}
             name={name}
+            type={type}
             year={year}
             desc={desc}
             website_url={website_url}
