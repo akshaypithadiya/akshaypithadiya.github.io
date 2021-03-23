@@ -11,6 +11,7 @@ const Projects = () => {
       desc:
         "Statistics, Visualizations and Paper Links of Machine Learning Conferences",
       website_url: "https://confviz.now.sh/",
+      tags: ["React", "JavaScript", "SASS"],
       github_url: "https://github.com/akshaypithadiya/confviz",
     },
     {
@@ -20,6 +21,7 @@ const Projects = () => {
       year: "2020",
       desc:
         "Collection of models and extensions for mobile deployment in PyTorch",
+      tags: ["React", "Apollo GraphQL", "JavaScript", "LESS"],
       website_url: "https://torchexpo.xyz/",
       github_url: null,
     },
@@ -30,6 +32,7 @@ const Projects = () => {
       year: "2018",
       desc:
         "Portal for college where students can write posts, take notes, upload photos, add comments and connect with other students",
+      tags: ["HTML", "CSS", "JavaScript", "PHP"],
       website_url: null,
       github_url: "https://github.com/akshaypithadiya/connex",
     },
@@ -43,7 +46,16 @@ const Projects = () => {
         <p>These are some of the projects i have worked on -</p>
       </div>
       {projects.map((project) => {
-        const { id, name, type, year, desc, website_url, github_url } = project;
+        const {
+          id,
+          name,
+          type,
+          year,
+          desc,
+          tags,
+          website_url,
+          github_url,
+        } = project;
         return (
           <Project
             key={id}
@@ -51,6 +63,7 @@ const Projects = () => {
             type={type}
             year={year}
             desc={desc}
+            tags={tags}
             website_url={website_url}
             github_url={github_url}
           />
