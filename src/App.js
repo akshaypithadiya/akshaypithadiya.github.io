@@ -1,12 +1,13 @@
-import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
-import Projects from "./pages/Projects";
-import NotFound from "./components/error/NotFound";
-import "./App.scss";
+import React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Projects from './pages/Projects';
+import PostsRoute from './pages/posts/PostsRoute';
+import NotFound from './components/error/NotFound';
+import './App.scss';
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/projects" component={Projects} />
+          <PostsRoute />
           <Route component={NotFound} status={404} />
         </Switch>
         <Footer />
