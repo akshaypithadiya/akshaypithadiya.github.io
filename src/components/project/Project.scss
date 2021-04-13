@@ -42,16 +42,20 @@
 
   .project-footer {
     font-size: 14px;
-
     a {
       color: #6fdbfc;
       margin-right: 16px;
+    }
+    .external-link {
+      position: relative;
+      top: 2px;
+      margin-left: 4px;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
   .Project {
-    max-width: 300px;
+    max-width: 320px;
   }
 }

@@ -15,7 +15,7 @@ const Post = (props) => {
       <br />
       <span>
         <Link to={link} className="read">
-          READ POST <ion-icon name="arrow-forward-outline"></ion-icon>
+          READ <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
       </span>
     </div>

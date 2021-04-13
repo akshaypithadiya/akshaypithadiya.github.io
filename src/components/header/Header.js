@@ -1,23 +1,23 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "./Header.scss";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Header.scss';
 
 const Header = () => {
   const navLinkItems = [
     {
       id: 1,
-      name: "Home",
-      path: "/",
+      name: 'Home',
+      path: '/',
     },
     {
       id: 2,
-      name: "Blog",
-      path: "/blog",
+      name: 'Posts',
+      path: '/posts',
     },
     {
       id: 3,
-      name: "Projects",
-      path: "/projects",
+      name: 'Projects',
+      path: '/projects',
     },
   ];
 

@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
+import Posts from './pages/Posts';
 import Projects from './pages/Projects';
 import PostsRoute from './pages/posts/PostsRoute';
 import NotFound from './components/error/NotFound';
@@ -16,7 +16,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/posts" component={Posts} />
           <Route exact path="/projects" component={Projects} />
           <PostsRoute />
           <Route component={NotFound} status={404} />

@@ -1,19 +1,19 @@
 import React from 'react';
 import Post from '../components/post/Post';
 
-const Home = () => {
+const Posts = () => {
   const posts = [
     {
       id: 1,
       title: 'How to build Custom Hooks in React',
       date: 'April 3, 2021',
-      link: '/blog/01-how-to-build-custom-hooks-in-react',
+      link: '/posts/01-how-to-build-custom-hooks-in-react',
     },
   ];
   return (
-    <div className="Blog">
+    <div className="Posts">
       <center>
-        <h2>Blog</h2>
+        <h2>Posts</h2>
       </center>
       {posts.map((post) => {
         return (
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Posts;

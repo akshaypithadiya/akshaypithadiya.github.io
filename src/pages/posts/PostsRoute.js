@@ -9,7 +9,7 @@ const Posts = () => {
       <Switch>
         <Route
           exact
-          path="/blog/01-how-to-build-custom-hooks-in-react"
+          path="/posts/01-how-to-build-custom-hooks-in-react"
           component={Post01}
         />
         <Route component={NotFound} status={404} />
