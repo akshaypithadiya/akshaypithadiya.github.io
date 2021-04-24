@@ -5,8 +5,13 @@
   padding: 8px;
   text-align: left;
 
-  .code {
-    border-radius: 4px;
+  .file-name {
+    text-decoration: underline;
+  }
+
+  .code-snippet {
+    border-radius: 6px;
+    margin: 10px 0px;
   }
   li {
     font-size: 18px;
